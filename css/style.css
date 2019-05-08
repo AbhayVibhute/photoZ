@@ -1,0 +1,134 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* header */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(../img/photography-2188440_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* navbar */
+
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    padding: 30px;
+    transition: all .7s;
+}
+
+.menu-item {
+    font-size: 13px;
+    color: #eee;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+
+.menu-item:hover {
+    color: #70aed2;
+}
+
+.nav-active {
+    color: #70aed2;
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+
+/* end of navbar */
+
+
+/* banner */
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* end of banner */
+
+
+/* end of header */
+
+
+/* mission */
+
+.mission {
+    background: #151f20;
+}
+
+.underline {
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}
+
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.fromRight {
+    animation-name: fromRighgt;
+    animation-duration: 3s;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* end of mission */
