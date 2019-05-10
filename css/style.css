@@ -195,3 +195,170 @@ header {
 
 
 /* end of customers */
+
+
+/* pricing */
+
+.card-1,
+.card-2,
+.card-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../img/cam-card1.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 400px;
+}
+
+.card-list-item {
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: auto
+}
+
+.price-card-btn {
+    background: #f5593d;
+    width: 130px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 18px #000;
+    transition: all 0.2s;
+}
+
+.price-card-btn:hover {
+    background: #f9793d;
+    transform: translateY(-2px);
+}
+
+.moveFromLeft {
+    animation-name: moveFromLeft;
+    animation-duration: 2s;
+}
+
+.moveFromRight {
+    animation-name: moveFromRight;
+    animation-duration: 2s;
+}
+
+.moveFromBottom {
+    animation-name: moveFromBottom;
+    animation-duration: 2s;
+}
+
+@keyframes moveFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+/* end of pricing */
+
+
+/* contact */
+
+.contact {
+    background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95) 50%, transparent 50%), url(../img/party.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #eee;
+    border-radius: 0;
+    transition: all 0.8s;
+}
+
+.contact input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #f5593d;
+}
+
+.submit-button {
+    background: #f5593d !important;
+    color: #eee;
+    transition: all .3s;
+}
+
+.submit-button:hover {
+    background: #f9793d;
+    transform: translateY(-3px)
+}
+
+
+/* .contact label {
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+input:placeholder-shown+label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+} */
+
+@media (max-width: 992px) {
+    .contact {
+        background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95));
+    }
+    .contact-form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* end of contact */
+
+
+/* footer */
+
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    color: #70aed2;
+    text-decoration: none;
+}
+
+
+/* end of footer */
